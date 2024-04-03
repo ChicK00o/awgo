@@ -8,7 +8,7 @@ import (
 	"net/url"
 	"strings"
 
-	aw "github.com/deanishe/awgo"
+	aw "github.com/ChicK00o/awgo"
 )
 
 // Gitea is a Workflow Option. It sets a Workflow Updater for the specified Gitea repo.

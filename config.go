@@ -9,7 +9,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/deanishe/awgo/util"
+	"github.com/ChicK00o/awgo/util"
 	"go.deanishe.net/env"
 )
 
@@ -17,11 +17,10 @@ import (
 //
 // Read the values with os.Getenv(EnvVarName) or via Config:
 //
-//    // Returns a string
-//    Config.Get(EnvVarName)
-//    // Parse string into a bool
-//    Config.GetBool(EnvVarDebug)
-//
+//	// Returns a string
+//	Config.Get(EnvVarName)
+//	// Parse string into a bool
+//	Config.GetBool(EnvVarDebug)
 const (
 	// Workflow info assigned in Alfred Preferences
 	EnvVarName     = "alfred_workflow_name"     // Name of workflow
@@ -66,10 +65,10 @@ var runJS = func(script string) error {
 // Config users a "Doer" API for setting variables, whereby calls are collected
 // and all executed at once when Config.Do() is called:
 //
-//     cfg := NewConfig()
-//     if err := cfg.Set("key1", "value1").Set("key2", "value2").Do(); err != nil {
-//         // handle error
-//     }
+//	cfg := NewConfig()
+//	if err := cfg.Set("key1", "value1").Set("key2", "value2").Do(); err != nil {
+//	    // handle error
+//	}
 //
 // Finally, you can use Config.To() to populate a struct from environment
 // variables, and Config.From() to read a struct's fields and save them

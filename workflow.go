@@ -16,8 +16,8 @@ import (
 
 	"go.deanishe.net/fuzzy"
 
-	"github.com/deanishe/awgo/keychain"
-	"github.com/deanishe/awgo/util"
+	"github.com/ChicK00o/awgo/keychain"
+	"github.com/ChicK00o/awgo/util"
 )
 
 // AwGoVersion is the semantic version number of this library.
@@ -67,12 +67,12 @@ var exitFunc = os.Exit
 // entry-point via Workflow.Run(), which catches panics, and logs & shows the
 // error in Alfred.
 //
-// Script Filter
+// # Script Filter
 //
 // To generate feedback for a Script Filter, use Workflow.NewItem() to create
 // new Items and Workflow.SendFeedback() to send the results to Alfred.
 //
-// Run Script
+// # Run Script
 //
 // Use the TextErrors option, so any rescued panics are printed as text,
 // not as JSON.
@@ -141,9 +141,9 @@ type Workflow struct {
 // New must be run within a valid Alfred environment; specifically
 // *at least* the following environment variables must be set:
 //
-//     alfred_workflow_bundleid
-//     alfred_workflow_cache
-//     alfred_workflow_data
+//	alfred_workflow_bundleid
+//	alfred_workflow_cache
+//	alfred_workflow_data
 //
 // If you aren't running from Alfred, or would like to specify a
 // custom environment, use NewFromEnv().

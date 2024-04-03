@@ -13,7 +13,7 @@ import (
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 
-	"github.com/deanishe/awgo/util"
+	"github.com/ChicK00o/awgo/util"
 )
 
 // Background jobs.

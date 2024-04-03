@@ -10,7 +10,7 @@ import (
 
 	"go.deanishe.net/fuzzy"
 
-	"github.com/deanishe/awgo/util"
+	"github.com/ChicK00o/awgo/util"
 )
 
 // --------------------------------------------------------------------
@@ -120,13 +120,12 @@ func (wf *Workflow) Filter(query string) []*fuzzy.Result {
 //
 // The sending methods are:
 //
-//     SendFeedback()
-//     Fatal()
-//     Fatalf()
-//     FatalError()
-//     Warn()
-//     WarnEmpty()  // only sends if there are no items
-//
+//	SendFeedback()
+//	Fatal()
+//	Fatalf()
+//	FatalError()
+//	Warn()
+//	WarnEmpty()  // only sends if there are no items
 func (wf *Workflow) SendFeedback() *Workflow {
 	// Set session ID
 	wf.Var("AW_SESSION_ID", wf.SessionID())

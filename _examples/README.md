@@ -61,6 +61,6 @@ Demonstrates AwGo's [caching API][caching].
 Shows a list of repos from GitHub tagged `alfred-workflow`.
 
 
-[caching]: https://godoc.org/github.com/deanishe/awgo#Cache
+[caching]: https://godoc.org/github.com/ChicK00o/awgo#Cache
 [installer]: https://gist.github.com/deanishe/35faae3e7f89f629a94e
 [fuzzy-if]: https://godoc.org/go.deanishe.net/fuzzy#Sortable

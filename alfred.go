@@ -9,7 +9,7 @@ import (
 	"path/filepath"
 	"strings"
 
-	"github.com/deanishe/awgo/util"
+	"github.com/ChicK00o/awgo/util"
 )
 
 // JXA scripts to call Alfred.

@@ -15,7 +15,7 @@ import (
 	"path/filepath"
 	"strings"
 
-	aw "github.com/deanishe/awgo"
+	aw "github.com/ChicK00o/awgo"
 )
 
 var (

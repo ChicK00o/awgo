@@ -10,7 +10,7 @@ import (
 	"net/url"
 	"path/filepath"
 
-	aw "github.com/deanishe/awgo"
+	aw "github.com/ChicK00o/awgo"
 )
 
 // Metadata is a Workflow Option. It sets a Workflow Updater based on

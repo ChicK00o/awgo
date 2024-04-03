@@ -8,7 +8,7 @@ It demonstrates best practices for handling updates, in particular
 loading the list of available releases in a background process and only
 showing an "Update is available!" message if the user query is empty.
 
-Details
+# Details
 
 Its own version (set in info.plist via Alfred's UI) is 0.2 and it's
 pointing to the GitHub repo "deanishe/alfred-ssh" (a completely
@@ -45,8 +45,8 @@ import (
 	"os"
 	"os/exec"
 
-	aw "github.com/deanishe/awgo"
-	"github.com/deanishe/awgo/update"
+	aw "github.com/ChicK00o/awgo"
+	"github.com/ChicK00o/awgo/update"
 )
 
 // Name of the background job that checks for updates

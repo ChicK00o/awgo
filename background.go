@@ -13,7 +13,7 @@ import (
 	"strconv"
 	"syscall"
 
-	"github.com/deanishe/awgo/util"
+	"github.com/ChicK00o/awgo/util"
 )
 
 // ErrJobExists is the error returned by RunInBackground if a job with

@@ -26,7 +26,7 @@ enable = [
   check-type-assertions = true
 
   [linter-settings.goimports]
-  local-prefixes = "github.com/deanishe/awgo"
+  local-prefixes = "github.com/ChicK00o/awgo"
 
 [issues]
   max-same-issues = 50

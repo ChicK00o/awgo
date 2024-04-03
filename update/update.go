@@ -18,7 +18,7 @@ import (
 	"sort"
 	"time"
 
-	"github.com/deanishe/awgo/util"
+	"github.com/ChicK00o/awgo/util"
 )
 
 var (

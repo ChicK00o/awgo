@@ -14,7 +14,7 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/deanishe/awgo/util"
+	"github.com/ChicK00o/awgo/util"
 
 	"howett.net/plist"
 )

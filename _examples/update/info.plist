@@ -128,6 +128,6 @@ The check for a new version is performed in the background, and a notification i
 	<key>version</key>
 	<string>0.2</string>
 	<key>webaddress</key>
-	<string>https://godoc.org/github.com/deanishe/awgo</string>
+	<string>https://godoc.org/github.com/ChicK00o/awgo</string>
 </dict>
 </plist>

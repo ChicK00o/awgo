@@ -13,7 +13,7 @@ import (
 	"sort"
 	"strings"
 
-	aw "github.com/deanishe/awgo"
+	aw "github.com/ChicK00o/awgo"
 )
 
 // matches filename of a compiled Alfred workflow

@@ -8,29 +8,27 @@ Package aw is a "plug-and-play" workflow development library/framework for Alfre
 It provides everything you need to create a polished and blazing-fast Alfred
 frontend for your project.
 
-
-Features
+# Features
 
 As of AwGo 0.26, all applicable features of Alfred 4.1 are supported.
 
 The main features are:
 
-	- Full support for Alfred 3 & 4
-	- Bi-directional interface to workflow's configuration
-	- Fluent API for generating Script Filter JSON
-	- Fuzzy filtering
-	- Simple, powerful API for caching/saving workflow data
-	- Keychain API to securely store (and sync) sensitive data
-	- API to call Alfred's AppleScript methods from Go code
-	- Helpers to easily run scripts and script code
-	- Workflow update API with built-in support for GitHub & Gitea
-	- Pre-configured logging for easier debugging, with a rotating log file
-	- Catches panics, logs stack trace and shows user an error message
-	- "Magic" queries/actions for simplified development and user support
-	- Some default icons based on macOS system icons
+  - Full support for Alfred 3 & 4
+  - Bi-directional interface to workflow's configuration
+  - Fluent API for generating Script Filter JSON
+  - Fuzzy filtering
+  - Simple, powerful API for caching/saving workflow data
+  - Keychain API to securely store (and sync) sensitive data
+  - API to call Alfred's AppleScript methods from Go code
+  - Helpers to easily run scripts and script code
+  - Workflow update API with built-in support for GitHub & Gitea
+  - Pre-configured logging for easier debugging, with a rotating log file
+  - Catches panics, logs stack trace and shows user an error message
+  - "Magic" queries/actions for simplified development and user support
+  - Some default icons based on macOS system icons
 
-
-Usage
+# Usage
 
 AwGo is an opinionated framework that expects to be used in a certain way in
 order to eliminate boilerplate. It *will* panic if not run in a valid,
@@ -58,7 +56,6 @@ variables should be set to meaningful values:
 	// set `alfred_version` as AwGo defaults to calling Alfred 4+
 	alfred_version=3
 
-
 NOTE: AwGo is currently in development. The API *will* change and should
 not be considered stable until v1.0. Until then, be sure to pin a version
 using go modules or similar.
@@ -76,7 +73,7 @@ error message to the user in Alfred.
 	package main
 
 	// Import name is "aw"
-	import "github.com/deanishe/awgo"
+	import "github.com/ChicK00o/awgo"
 
 	// aw.Workflow is the main API
 	var wf *aw.Workflow
@@ -101,13 +98,11 @@ error message to the user in Alfred.
 		wf.SendFeedback()
 	}
 
-
 In the Script box (Language = "/bin/bash"):
 
 	./script_filter
 
-
-Script Filters
+# Script Filters
 
 To generate results for Alfred to show in a Script Filter, use the feedback
 API of Workflow:
@@ -136,8 +131,7 @@ and Modifier.Var.
 
 See Workflow.SendFeedback for more documentation.
 
-
-Run Script actions
+# Run Script actions
 
 Alfred requires a different JSON format if you wish to set workflow variables.
 
@@ -151,8 +145,7 @@ Alfred JSON if it catches a panic:
 
 See ArgVars for more information.
 
-
-Configuration
+# Configuration
 
 New() creates a *Workflow using the default values and workflow settings
 read from environment variables set by Alfred.
@@ -166,8 +159,7 @@ A Workflow can be re-configured later using its Configure() method.
 
 See the documentation for Option for more information on configuring a Workflow.
 
-
-Updates
+# Updates
 
 AwGo can check for and install new versions of your workflow.
 Subpackage update provides an implementation of the Updater interface and
@@ -176,8 +168,7 @@ an Alfred `metadata.json` file.
 
 See subpackage update and _examples/update.
 
-
-Fuzzy filtering
+# Fuzzy filtering
 
 AwGo can filter Script Filter feedback using a Sublime Text-like fuzzy
 matching algorithm.
@@ -191,8 +182,7 @@ the fuzzy sort settings.
 
 Fuzzy matching is done by package https://godoc.org/go.deanishe.net/fuzzy
 
-
-Logging
+# Logging
 
 AwGo automatically configures the default log package to write to STDERR
 (Alfred's debugger) and a log file in the workflow's cache directory.
@@ -204,8 +194,7 @@ it exceeds 1 MiB in size. One previous log is kept.
 AwGo detects when Alfred's debugger is open (Workflow.Debug() returns true)
 and in this case prepends filename:linenumber: to log messages.
 
-
-Workflow settings
+# Workflow settings
 
 The Config struct (which is included in Workflow as Workflow.Config) provides an
 interface to the workflow's settings from the Workflow Environment Variables panel
@@ -242,8 +231,7 @@ settings in Alfred:
 See the documentation for Config.To and Config.From for more information,
 and _examples/settings for a demo workflow based on the API.
 
-
-Alfred actions
+# Alfred actions
 
 The Alfred struct provides methods for the rest of Alfred's AppleScript
 API. Amongst other things, you can use it to tell Alfred to open, to search
@@ -251,8 +239,7 @@ for a query, to browse/action files & directories, or to run External Triggers.
 
 See documentation of the Alfred struct for more information.
 
-
-Storing data
+# Storing data
 
 AwGo provides a basic, but useful, API for loading and saving data.
 In addition to reading/writing bytes and marshalling/unmarshalling to/from
@@ -262,9 +249,9 @@ See Cache and Session for the API documentation.
 
 Workflow has three caches tied to different directories:
 
-    Workflow.Data     // Cache pointing to workflow's data directory
-    Workflow.Cache    // Cache pointing to workflow's cache directory
-    Workflow.Session  // Session pointing to cache directory tied to session ID
+	Workflow.Data     // Cache pointing to workflow's data directory
+	Workflow.Cache    // Cache pointing to workflow's cache directory
+	Workflow.Session  // Session pointing to cache directory tied to session ID
 
 These all share (almost) the same API. The difference is in when the data go
 away.
@@ -276,8 +263,7 @@ directory, so may be deleted by the system or "system maintenance" tools.
 The Data directory lives with Alfred's application data and would not
 normally be deleted.
 
-
-Scripts and background jobs
+# Scripts and background jobs
 
 Subpackage util provides several functions for running script files and
 snippets of AppleScript/JavaScript code. See util for documentation and
@@ -291,15 +277,14 @@ Filters extremely responsive.
 
 See _examples/update and _examples/workflows for demonstrations of this API.
 
+# Links
 
-Links
+Docs:     https://godoc.org/github.com/ChicK00o/awgo
 
-Docs:     https://godoc.org/github.com/deanishe/awgo
+Source:   https://github.com/ChicK00o/awgo
 
-Source:   https://github.com/deanishe/awgo
+Issues:   https://github.com/ChicK00o/awgo/issues
 
-Issues:   https://github.com/deanishe/awgo/issues
-
-Licence:  https://github.com/deanishe/awgo/blob/master/LICENCE
+Licence:  https://github.com/ChicK00o/awgo/blob/master/LICENCE
 */
 package aw

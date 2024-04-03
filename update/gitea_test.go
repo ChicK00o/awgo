@@ -10,7 +10,7 @@ import (
 
 	"github.com/stretchr/testify/assert"
 
-	aw "github.com/deanishe/awgo"
+	aw "github.com/ChicK00o/awgo"
 )
 
 // 6 valid releases, including one prerelease

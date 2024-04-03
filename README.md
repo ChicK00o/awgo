@@ -51,7 +51,7 @@ Full-featured library to build lightning-fast workflows in a jiffy.
 Install AwGo with:
 
 ```sh
-go get -u github.com/deanishe/awgo
+go get -u github.com/ChicK00o/awgo
 ```
 
 Typically, you'd call your program's main entry point via `Workflow.Run()`.
@@ -64,7 +64,7 @@ program.go:
 package main
 
 // Package is called aw
-import "github.com/deanishe/awgo"
+import "github.com/ChicK00o/awgo"
 
 // Workflow is the main API
 var wf *aw.Workflow
@@ -144,36 +144,36 @@ The icon is based on the [Go Gopher][gopher] by [Renee French][renee].
 
 [alfred]: https://www.alfredapp.com/
 [licence]: ./LICENCE
-[godoc]: https://pkg.go.dev/github.com/deanishe/awgo
+[godoc]: https://pkg.go.dev/github.com/ChicK00o/awgo
 [gopher]: https://blog.golang.org/gopher
 [renee]: http://reneefrench.blogspot.com
-[config]: https://pkg.go.dev/github.com/deanishe/awgo#Config
-[feedback]: https://pkg.go.dev/github.com/deanishe/awgo#Feedback.NewItem
-[fuzzy]: https://pkg.go.dev/github.com/deanishe/awgo/fuzzy
-[cache]: https://pkg.go.dev/github.com/deanishe/awgo#hdr-Storing_data
-[cache-api]: https://pkg.go.dev/github.com/deanishe/awgo#Cache
-[run]: https://pkg.go.dev/github.com/deanishe/awgo#Run
-[keychain]: https://pkg.go.dev/github.com/deanishe/awgo/keychain
-[scripts]: https://pkg.go.dev/github.com/deanishe/awgo/util#hdr-Scripting
-[update]: https://pkg.go.dev/github.com/deanishe/awgo/update
-[update-github]: https://pkg.go.dev/github.com/deanishe/awgo/update#GitHub
-[update-gitea]: https://pkg.go.dev/github.com/deanishe/awgo/update#Gitea
-[logging]: https://pkg.go.dev/github.com/deanishe/awgo#hdr-Logging
-[magic]: https://pkg.go.dev/github.com/deanishe/awgo#MagicAction
-[icons]: https://pkg.go.dev/github.com/deanishe/awgo#Icon
-[examples-code]: https://github.com/deanishe/awgo/tree/master/_examples
-[examples-docs]: https://pkg.go.dev/github.com/deanishe/awgo/_examples
+[config]: https://pkg.go.dev/github.com/ChicK00o/awgo#Config
+[feedback]: https://pkg.go.dev/github.com/ChicK00o/awgo#Feedback.NewItem
+[fuzzy]: https://pkg.go.dev/github.com/ChicK00o/awgo/fuzzy
+[cache]: https://pkg.go.dev/github.com/ChicK00o/awgo#hdr-Storing_data
+[cache-api]: https://pkg.go.dev/github.com/ChicK00o/awgo#Cache
+[run]: https://pkg.go.dev/github.com/ChicK00o/awgo#Run
+[keychain]: https://pkg.go.dev/github.com/ChicK00o/awgo/keychain
+[scripts]: https://pkg.go.dev/github.com/ChicK00o/awgo/util#hdr-Scripting
+[update]: https://pkg.go.dev/github.com/ChicK00o/awgo/update
+[update-github]: https://pkg.go.dev/github.com/ChicK00o/awgo/update#GitHub
+[update-gitea]: https://pkg.go.dev/github.com/ChicK00o/awgo/update#Gitea
+[logging]: https://pkg.go.dev/github.com/ChicK00o/awgo#hdr-Logging
+[magic]: https://pkg.go.dev/github.com/ChicK00o/awgo#MagicAction
+[icons]: https://pkg.go.dev/github.com/ChicK00o/awgo#Icon
+[examples-code]: https://github.com/ChicK00o/awgo/tree/master/_examples
+[examples-docs]: https://pkg.go.dev/github.com/ChicK00o/awgo/_examples
 [jetbrains]: https://www.jetbrains.com/?from=deanishe/awgo
 [neovim]: https://neovim.io/
 
-[godoc-badge]: https://pkg.go.dev/badge/github.com/deanishe/awgo.svg
-[godoc-link]: https://pkg.go.dev/github.com/deanishe/awgo
-[goreport-link]: https://goreportcard.com/report/github.com/deanishe/awgo
-[goreport-badge]: https://goreportcard.com/badge/github.com/deanishe/awgo
+[godoc-badge]: https://pkg.go.dev/badge/github.com/ChicK00o/awgo.svg
+[godoc-link]: https://pkg.go.dev/github.com/ChicK00o/awgo
+[goreport-link]: https://goreportcard.com/report/github.com/ChicK00o/awgo
+[goreport-badge]: https://goreportcard.com/badge/github.com/ChicK00o/awgo
 [azure-badge]: https://img.shields.io/azure-devops/build/deanishe/6cd8e4fe-7366-4485-aea6-e9d75e7757b2/1
 [azure-link]: https://dev.azure.com/deanishe/AwGo/_build
-[ghaction-badge]: https://github.com/deanishe/awgo/workflows/CI/badge.svg
-[ghaction-link]: https://github.com/deanishe/awgo/actions?query=workflow%3ACI
+[ghaction-badge]: https://github.com/ChicK00o/awgo/workflows/CI/badge.svg
+[ghaction-link]: https://github.com/ChicK00o/awgo/actions?query=workflow%3ACI
 [coveralls-badge]: https://coveralls.io/repos/github/deanishe/awgo/badge.svg?branch=master&v3
 [coveralls-link]: https://coveralls.io/github/deanishe/awgo?branch=master
 

@@ -17,7 +17,7 @@ import (
 	"github.com/bmatcuk/doublestar"
 	"howett.net/plist"
 
-	"github.com/deanishe/awgo/util"
+	"github.com/ChicK00o/awgo/util"
 )
 
 // Export builds an .alfredworkflow file in directory dest

@@ -17,7 +17,7 @@ import (
 	"github.com/stretchr/testify/require"
 	"go.deanishe.net/env"
 
-	"github.com/deanishe/awgo/util"
+	"github.com/ChicK00o/awgo/util"
 )
 
 // TestWorkflowValues tests workflow name, bundle ID etc.

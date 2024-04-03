@@ -132,6 +132,6 @@ Data are downloaded in the background and search is performed on the cached data
 	<key>version</key>
 	<string>0.2</string>
 	<key>webaddress</key>
-	<string>https://godoc.org/github.com/deanishe/awgo</string>
+	<string>https://godoc.org/github.com/ChicK00o/awgo</string>
 </dict>
 </plist>

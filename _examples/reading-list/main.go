@@ -11,16 +11,16 @@ Regular fuzzy sorting only considers match quality, so with the query
 "kingkiller", the Kingkiller Chronicle series would be sorted based on where
 the term "kingkiller" appears in the title, i.e. shortest title first:
 
-    The Doors of Stone (The Kingkiller Chronicle, #3) [unpublished]
-    The Wise Man's Fear (The Kingkiller Chronicle, #2) [unread]
-    The Name of the Wind (The Kingkiller Chronicle, #1) [read]
+	The Doors of Stone (The Kingkiller Chronicle, #3) [unpublished]
+	The Wise Man's Fear (The Kingkiller Chronicle, #2) [unread]
+	The Name of the Wind (The Kingkiller Chronicle, #1) [read]
 
 The custom implementation sorts by status then match quality, thus keeping
 unread books before unpublished and read ones:
 
-    The Wise Man's Fear (The Kingkiller Chronicle, #2) [unread]
-    The Doors of Stone (The Kingkiller Chronicle, #3) [unpublished]
-    The Name of the Wind (The Kingkiller Chronicle, #1) [read]
+	The Wise Man's Fear (The Kingkiller Chronicle, #2) [unread]
+	The Doors of Stone (The Kingkiller Chronicle, #3) [unpublished]
+	The Name of the Wind (The Kingkiller Chronicle, #1) [read]
 */
 package main
 
@@ -28,7 +28,7 @@ import (
 	"fmt"
 	"sort"
 
-	aw "github.com/deanishe/awgo"
+	aw "github.com/ChicK00o/awgo"
 	"go.deanishe.net/fuzzy"
 )
 

@@ -114,7 +114,7 @@ func TestNonMagicArgs(t *testing.T) {
 }
 
 func TestMagicDefaults(t *testing.T) {
-	helpURL := "https://github.com/deanishe/awgo"
+	helpURL := "https://github.com/ChicK00o/awgo"
 
 	withTestWf(func(wf *Workflow) {
 		wf.Configure(HelpURL(helpURL))

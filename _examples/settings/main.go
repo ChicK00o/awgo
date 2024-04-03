@@ -23,7 +23,7 @@ import (
 	"fmt"
 	"log"
 
-	aw "github.com/deanishe/awgo"
+	aw "github.com/ChicK00o/awgo"
 )
 
 // Server contains the configuration loaded from the workflow's settings

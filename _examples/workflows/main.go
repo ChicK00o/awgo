@@ -35,7 +35,7 @@ import (
 	"os/exec"
 	"time"
 
-	aw "github.com/deanishe/awgo"
+	aw "github.com/ChicK00o/awgo"
 	"go.deanishe.net/fuzzy"
 )
 

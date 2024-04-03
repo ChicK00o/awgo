@@ -8,7 +8,7 @@ import (
 	"io/ioutil"
 	"testing"
 
-	aw "github.com/deanishe/awgo"
+	aw "github.com/ChicK00o/awgo"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 )

@@ -21,7 +21,7 @@ var (
 	apiQuery   = "topic:alfred-workflow"
 	apiHeaders = map[string]string{
 		"Accept":     "application/vnd.github.mercy-preview+json",
-		"User-Agent": "github.com/deanishe/awgo",
+		"User-Agent": "github.com/ChicK00o/awgo",
 	}
 	client *http.Client
 )
